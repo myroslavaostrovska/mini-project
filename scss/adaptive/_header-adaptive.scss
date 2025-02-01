@@ -1,0 +1,32 @@
+@media screen and (max-width: 670px) {
+    .header {
+        &_top {
+            justify-content: start;
+
+            &--list {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 15px;
+            }
+        }
+
+        &_line {
+            margin-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 435px){
+    .header {
+        &_bottom--title {
+            font-size: 35px;
+        }
+
+        &_top {
+            &--list {
+                grid-template-columns: repeat(2,1fr);
+                gap: 25px;
+            }
+        }
+    }
+}

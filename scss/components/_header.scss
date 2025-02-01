@@ -1,0 +1,106 @@
+.header {
+  padding-top: 40px;
+  background-image: url("/images/Rectangle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_container {
+    width: 100%;
+    max-width: 1113px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &_top {
+    display: flex;
+    justify-content: end;
+
+    &--list {
+      display: flex;
+      justify-content: center;
+      gap: 39px;
+
+      li:first-child &--link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::after {
+          display: block;
+          content: "";
+          width: 107px;
+          height: 1px;
+          background-color: #ffffff;
+          margin-top: 40px;
+        }
+      }
+      &--link {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: #ffffff;
+      }
+    }
+
+   
+  }
+  &_line {
+    width: 100%;
+    height: 1px;
+    background-color: #a1a1a1;
+  }
+
+  &_bottom {
+    padding-top: 219px;
+    padding-bottom: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--text {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.5px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    &--title {
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 64.36px;
+      text-align: center;
+      color: #ffffff;
+      max-width: 829px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    &--button {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.5px;
+      text-align: center;
+      color: #ffffff;
+      background: #4985ff;
+      width: 200px;
+      height: 45px;
+      border-radius: 30px;
+      border: 0;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px 0px #6f6f6f40;
+      transition: 0.5s linear;
+
+      &:hover {
+        transition: 0.5s linear;
+        background-color: #4a68a5;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@import "../adaptive/header-adaptive"
