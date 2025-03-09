@@ -1,0 +1,123 @@
+/* first section */
+@media screen and (max-width: 700px) {
+    .main {
+        &_first {
+            &--cards {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+
+/* second section */
+@media screen and (max-width: 836px) {
+    .main {
+        &_second--section--top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .main {
+        &_second--section--top--right--image {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .main {
+        &_second--section--top--right--image {
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .main {
+        &_second--section--top--right--image {
+            max-width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .main {
+        &_second--section--bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    }
+}
+
+/* third section */
+@media screen and (max-width: 1050px) {
+    .main {
+        &_third--section--bottom--card--img {
+            max-width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main {
+        &_third--section--bottom--card--img {
+            max-width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        &_third--section--bottom--card {
+            &--img {
+                max-width: 100px;
+            }
+
+            &--header {
+                font-size: 14px;
+            }
+
+            &--text {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .main {
+        &_third--section--bottom {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .main {
+        &_third--section--top {
+            display: flex;
+            flex-direction: column-reverse;
+
+            &--title {
+                order: 1;
+            }
+
+            &--button {
+                order: 2;
+            }
+        }
+    }
+}
+
+/* forth section */
+@media screen and (max-width: 1112px) {
+}

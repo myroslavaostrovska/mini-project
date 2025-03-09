@@ -400,6 +400,7 @@ li:first-child .header_top--list--link::after {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .main_fourth--section--button {
   width: 200px;
@@ -532,6 +533,86 @@ li:first-child .header_top--list--link::after {
   align-self: center;
 }
 
+/* first section */
+@media screen and (max-width: 700px) {
+  .main_first--cards {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/* second section */
+@media screen and (max-width: 836px) {
+  .main_second--section--top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 505px) {
+  .main_second--section--top--right--image {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 388px) {
+  .main_second--section--top--right--image {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .main_second--section--top--right--image {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .main_second--section--bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+/* third section */
+@media screen and (max-width: 1050px) {
+  .main_third--section--bottom--card--img {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main_third--section--bottom--card--img {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main_third--section--bottom--card--img {
+    max-width: 100px;
+  }
+  .main_third--section--bottom--card--header {
+    font-size: 14px;
+  }
+  .main_third--section--bottom--card--text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 423px) {
+  .main_third--section--bottom {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 521px) {
+  .main_third--section--top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main_third--section--top--title {
+    order: 1;
+  }
+  .main_third--section--top--button {
+    order: 2;
+  }
+}
+/* forth section */
 .footer {
   background-color: #f6f6f8;
   padding-top: 70px;
